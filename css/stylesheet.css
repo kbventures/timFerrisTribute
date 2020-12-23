@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* 
 
@@ -13,6 +13,10 @@ Colors were extracted using https://labs.tineye.com/color/
   --red: #cc2a2b;
   --black: #362823;
   --brown: #886a59;
+}
+
+#image {
+  display: block;
 }
 
 body {
@@ -31,11 +35,17 @@ body {
 
 /* Navigation */
 #navigation {
+  font-family: 'Oswald', sans-serif;
   font-size: 3rem;
   display: block;
   justify-content: center;
   text-align: center;
   margin-top: 2rem;
+}
+
+#navigation p {
+  font-style: italic;
+  font-size: 2rem;
 }
 
 /* Chronology */
@@ -75,6 +85,14 @@ hr {
   color: #00acee;
 }
 
+#list-item-header {
+  margin-top: 5rem;
+}
+
+#img-caption {
+  padding: 0.5rem 0rem 0.25rem 0rem;
+}
+
 .center {
   display: block;
   margin: auto;
@@ -82,24 +100,28 @@ hr {
   max-height: 100%;
 }
 
-.testing a img {
+.amazon-link a img {
   display: block;
   margin: auto;
 }
 
 li {
-  margin-bottom: 1.6rem;
+  margin-top: 3rem;
   padding: 0 3rem;
 }
 
 #social-links {
-  border: solid 0.25rem var(--grey-background);
+  /* border: solid 0.25rem var(--grey-background); */
   text-align: center;
   padding: 1rem;
+  margin: 1rem 0;
 }
 
 .text-center {
   text-align: center;
+}
+ul li {
+  text-align: justify;
 }
 
 #social-links a {
@@ -112,7 +134,7 @@ Gradient Courtesy of :
 https://stackoverflow.com/questions/38507734/fontawesome-instagram-icon-colorized/49659118
 
 */
-#instagram .fa-instagram {
+/* #instagram .fa-instagram {
   color: transparent;
   background: radial-gradient(
     circle at 30% 107%,
@@ -132,8 +154,57 @@ https://stackoverflow.com/questions/38507734/fontawesome-instagram-icon-colorize
   );
   background-clip: text;
   -webkit-background-clip: text;
-}
+} */
 
 #linkedin {
   color: #0e76a8;
+}
+
+footer p {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+#social-links svg {
+  max-width: 3rem;
+}
+
+#twitter svg:hover {
+  fill: #1da1f2;
+}
+
+#instagram svg:hover {
+  border-radius: 13px;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+#linkedin svg:hover {
+  fill: #0e76a8;
 }
