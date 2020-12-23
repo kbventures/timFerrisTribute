@@ -1,3 +1,5 @@
+/* https://www.digitalocean.com/community/tutorials/css-minimal-css-reset  as been modified somewhat */
+
 html {
   box-sizing: border-box;
   font-size: 16px;
